@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Student Name: Sheber Mokua
+File Name: about.html
+Date: 02/25/2025
+-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact us at (814) 555-8989 or visit us at 8989 Rescue Drive, Ocala, FL for more information.">
+  <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.min.css">
+  <link rel="stylesheet" href="social.css">
+  <title>Contact Us – Location | Wild Rescues</title>
+  </head>
+  <body>
+
+<!-- Skip to Content Link -->
+  <a href="#content" class="skip-link">Skip to Content</a>
+
+   <header>
+    <div class="tab-desk">
+      <a href="index.html">Home</a>
+    </div>
+    <div class="mobile">
+      <h1>&#128062; Wildlife Rescues</h1>
+      <h3>Rescue. Rehabilitate. Release.</h3>
+    </div>
+  </header>
+    <nav>
+    <button id="menu-toggle">☰ Menu</button>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="partnership.html">Partnership</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+    <!-- Use the main area to add the main content to the webpage -->
+
+    <main>
+      <div id="welcome">
+        <h2>You can reach us at:</h2>
+        <p>Office: (814) 555-8989</p>
+        <p>Email: <a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a> </p>
+        <p>Address:<a href="https://goo.gl/maps/BTJzjc2tALd4RDWA8" target="_blank"
+            >8989 Rescue Drive, Ocala, FL 34471
+          </a>
+        </p>
+      </div>
+     <div id="Form">
+	<h2> Complete the form below and we will contact you soon. </h2>
+	<form class="form-grid">
+<!-- Start Form -->
+        
+        <!-- First Fieldset: Contact Information -->
+        <fieldset>
+          <legend>Contact Information</legend> 
+
+          <label for="fName">First Name:</label>
+          <input type="text" name="fName" id="fName">
+
+          <label for="lName">Last Name:</label>
+          <input type="text" name="lName" id="lName">
+
+          <label for="bName">Name of Business:</label>
+          <input type="text" name="bName" id="bName">
+
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email">
+
+          <label for="phone">Phone:</label>
+          <input type="tel" name="phone" id="phone">
+        </fieldset>
+
+        <!-- Second Fieldset: Additional Information -->
+        <fieldset>
+          <legend>Additional Information</legend>
+
+          <p>I would like more information about:</p>
+
+          <label for="vol">
+            <input type="radio" name="info" id="vol" value="Volunteering">
+            Volunteering
+          </label>
+
+          <label for="sponsor">
+            <input type="radio" name="info" id="sponsor" value="Sponsorship Opportunities">
+            Sponsorship Opportunities
+          </label>
+
+          <label for="wild">
+            <input type="radio" name="info" id="wild" value="Wildlife">
+            Wildlife
+          </label>
+
+          <label for="other">
+            <input type="radio" name="info" id="other" value="Other">
+            Other, please specify below.
+          </label>
+
+          <label for="questions">What questions do you have for us?</label>
+          <textarea name="questions" id="questions" rows="5" cols="35"></textarea>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <input type="submit" id="submit" value="Submit" class="btn">
+      </form>
+    </div>
+    </main>
+
+    <footer>
+    <div class="copyright">
+      <p>&copy; 2024 Wild Rescues</p>
+      <p><a href="mailto:contact@wildrescues.net">Email Us</a></p>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com" target="_blank"><img src="facebook-logo.png" alt="Facebook Logo"></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="twitter-logo.png" alt="Twitter Logo"></a>
+    </div>
+  </footer>
+<!-- JavaScript File -->
+  <script src="script.js"></script>
+  </body>
+</html>

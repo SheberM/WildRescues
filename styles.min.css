@@ -1,0 +1,404 @@
+/*  
+Author: Sheber Mokua  
+File Name: styles.css  
+Date: 03/04/2025  
+*/
+
+/* General Styling */
+body {
+  font-family: 'Lora', serif;
+  background-color: #f6eee4;
+}
+
+/* Skip to Content */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: #fff;
+  padding: 10px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+/* Hero Section (Header with Background Image) */
+.hero {
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Ensures text is visible */
+  text-align: center;
+}
+
+/* Welcome Text */
+.welcome {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+}
+
+/* Display-1 Font Size */
+.display-1 {
+  font-size: 4em;
+}
+
+/* Background Brown */
+.bg-brown {
+  background-color: #2a1f14;
+  color: white;
+}
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background Colors & Typography */
+body {
+  font-family: 'Lora', serif;
+  background-color: #f6eee4; /* Soft beige */
+}
+
+header {
+  background-color: #2a1f14; /* Dark brown */
+  color: #f6eee4; /* Light beige text */
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav {
+  background-color: #3e2e1e; /* Mid-brown */
+}
+
+/* Skip to Content Link for Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: #fff;
+  padding: 10px;
+  z-index: 100;
+  text-decoration: none;
+  color: #2a1f14;
+  font-weight: bold;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+/* Default Navigation Styles */
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+nav li {
+  display: block;
+  padding: 0.8em 0;
+  border-top: 0.5px solid #f6eee4; /* Thin separator line */
+}
+
+nav li:first-child {
+  border-top: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f6eee4;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Mobile Navigation Styles */
+#nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: #3e2e1e;
+  text-align: center;
+  width: 100%;
+}
+
+#nav-links.show {
+  display: flex; /* Show when menu is toggled */
+}
+
+#menu-toggle {
+  background-color: #2a1f14;
+  color: #f6eee4;
+  font-size: 1.5em;
+  padding: 0.5em;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #menu-toggle {
+    display: none; /* Hide button on larger screens */
+  }
+
+  #nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Main Content */
+main {
+  padding: 1em;
+}
+
+/* Footer */
+footer {
+  background-color: #2a1f14;
+  color: #f6eee4;
+  text-align: center;
+  padding: 1em 0;
+}
+
+footer a {
+  color: #f6eee4;
+  text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social img {
+  display: inline-block;
+  padding: 4%;
+  width: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  /* Tablet Viewport: Style rules for footer area */
+  footer {
+    overflow: auto;
+  }
+
+  .copyright {
+    float: left;
+    width: 65%;
+  }
+
+  .social {
+    float: right;
+    width: 25%;
+  }
+}
+
+/* Mobile Specific Styles */
+.mobile, .mobile-tablet {
+  display: block;
+}
+
+.tab-desk, .desktop {
+  display: none;
+}
+
+.mobile h1 {
+  font-family: 'Emblema One', cursive;
+  font-size: 2em;
+}
+
+.mobile h3 {
+  font-family: 'Lora', serif;
+  font-size: 1.2em;
+}
+
+/* Rounded Images */
+.round {
+  border-radius: 8px;
+  max-width: 100%;
+  display: block;
+  margin: 1em auto;
+}
+
+/* Telephone Link */
+.tel-link {
+  background-color: #2a1f14;
+  padding: 1em;
+  text-align: center;
+  margin: 1em auto;
+  width: 80%;
+  border-radius: 6px;
+}
+
+.tel-link a {
+  color: #f6eee4;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* FAQ Section Styling */
+#questions {
+  margin: 1em;
+}
+
+#questions p {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5em;
+  background-color: #deccba;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+#questions p:hover {
+  background-color: #c5a88a;
+}
+
+#answer {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #2a1f14;
+}
+
+/* Sponsorship Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #2a1f14;
+  padding: 0.8em;
+  text-align: left;
+}
+
+th {
+  background-color: #2a1f14;
+  color: white;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #deccba;
+}
+
+tr:hover {
+  background-color: #c5a88a;
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1024px) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile-tablet {
+    display: none;
+  }
+
+  /* Desktop Table Styling */
+  table {
+    border: 1px solid #2a1f14;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+  }
+
+  th, td {
+    border: 1px solid #2a1f14;
+    padding: 1%;
+  }
+
+  th {
+    background-color: #2a1f14;
+    color: #fff;
+    font-size: 1.15em;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #deccba;
+  }
+
+  /* Form Styling */
+  form {
+    width: auto;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+  .btn {
+    grid-column: 1 / span 2;
+  }
+}
+
+/* Tablet Viewport */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  form {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /* Hide mobile-specific elements on tablets */
+  .mobile {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  /* Tablet navigation adjustments */
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Form Elements */
+#contact, #form h2 {
+  text-align: center;
+}
+
+fieldset, input, textarea {
+  margin-bottom: 2%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding-top: 2%;
+}
+
+form #submit {
+  margin: 0 auto;
+  display: block;
+  padding: 2%;
+  background-color: #78593a;
+  color: #f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
+}

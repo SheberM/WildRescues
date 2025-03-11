@@ -1,0 +1,64 @@
+/*  
+Author: Sheber Mokua
+File Name: social.css
+Date: 02/25/2025
+*/
+
+/* General Styling for Social Media Icons */
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.social a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social img {
+  width: 40px; /* Default size */
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.social img:hover {
+  transform: scale(1.2);
+}
+
+/* Mobile View (default) */
+@media screen and (max-width: 767px) {
+  .social {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .social img {
+    width: 30px; /* Smaller size for mobile */
+  }
+}
+
+/* Tablet View */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .social {
+    justify-content: space-evenly;
+  }
+
+  .social img {
+    width: 40px; /* Medium size for tablet */
+  }
+}
+
+/* Desktop View */
+@media screen and (min-width: 1024px) {
+  .social {
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+
+  .social img {
+    width: 50px; /* Larger size for desktop */
+  }
+}
