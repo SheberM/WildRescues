@@ -7,6 +7,15 @@ Date: 02/20/2025
 // Hamburger menu function
 document.getElementById("menu-toggle").addEventListener("click", function() {
   document.getElementById("nav-links").classList.toggle("show");
+  document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("show");
+  });
+});
+
 });
 
 // FAQ interactivity
